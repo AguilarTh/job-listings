@@ -1,0 +1,83 @@
+.job-display {
+  background-color: rgb(255, 255, 255);
+  width: 80%;
+  padding: 1rem;
+  border-left: 0.5rem solid var(--green400);
+  border-radius: 0.5rem;
+  /* estudar e melhorar o shadow */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.logo-circle {
+  border-radius: 50%;
+  background-color: blueviolet;
+  width: 88px;
+  height: 88px;
+  margin-top: -60px;
+}
+
+.job-top-bar {
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.job-name {
+  color: var(--green400);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.job-function {
+  color: var(--green900);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+/*  ESTUDAR MELHOR LISTA EM CSS  */
+.job-infos {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.job-infos li {
+  color: var(--gray400);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* O Elemento ":first-child" tem q ser usado no proprio elemento li da lista */
+.job-infos li:first-child {
+  list-style-type: none;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: var(--gray400);
+}
+
+.filters-job-display {
+  display: flex;
+  align-items: center;
+  /* Força a quebra de linha -> estudar melhor */
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .job-display {
+    flex-direction: row;
+  }
+  .logo-circle {
+    margin-top: 0px;
+  }
+  .job-top-bar {
+    flex-direction: column;
+  }
+}

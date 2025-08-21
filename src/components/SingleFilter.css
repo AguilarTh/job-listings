@@ -1,0 +1,27 @@
+/* entender esse trem melhor dps, tive ajuda do gemini */
+
+.single-filter-box {
+  background-color: hsl(180, 17%, 92%);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  /* é melhor colocar um gap no pai ou uma margin no filho? ! */
+}
+
+.single-filter-type {
+  padding: 0.6rem 0.6rem 0.4rem 0.6rem;
+  color: var(--green400);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.clear-filter-button {
+  background-color: var(--green400);
+  border: none;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}

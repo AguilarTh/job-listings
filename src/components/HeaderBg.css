@@ -1,0 +1,17 @@
+.header-bg {
+  width: auto;
+  height: 156px;
+  /* ESTUDAR A PROP DO BACKGROUND -> FAVORITEI O SITE */
+  background-color: var(--green400);
+  /* Estudar melhor a forma de pegar as url */
+  background-image: url(../assets/bg-header-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /* pd ser escrito como short-form -> background: "cor" "url" no-repeat */
+}
+
+@media (min-width: 1200px) {
+  .header-bg {
+    background-image: url(../assets/bg-header-desktop.svg);
+  }
+}

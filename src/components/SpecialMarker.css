@@ -1,0 +1,16 @@
+.special-marker {
+  height: 1rem;
+  padding: 1rem 0.7rem;
+  background-color: var(--green900);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+}
+
+.new-marker {
+  color: var(--greenBg);
+  font-size: 1rem;
+  font-weight: 600;
+}

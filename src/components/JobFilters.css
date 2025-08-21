@@ -1,0 +1,8 @@
+.filters-box {
+  background-color: hsl(180, 17%, 92%);
+  padding: 0.8rem;
+  border-radius: 0.2rem;
+  color: var(--green400);
+  font-size: 1.2rem;
+  font-weight: 800;
+}

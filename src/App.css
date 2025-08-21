@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+/* 100 - 900 */
+/* 500, 700 recomendado */
+
+/* DESKTOP SIZE: 1200px  */
+
+/* @media (min-width: 1200px) {
+  
+} */
+
+:root {
+  /* --- PRIMARY --- */
+  --green400: hsl(180, 29%, 50%);
+
+  /* --- NEUTRAL --- */
+  --greenBg: hsl(180, 52%, 96%);
+  --gray400: hsl(180, 8%, 52%);
+  --green900: hsl(180, 14%, 20%);
+}
+
+* {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: var(--greenBg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
