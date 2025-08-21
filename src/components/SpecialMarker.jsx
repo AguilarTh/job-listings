@@ -1,8 +1,9 @@
 import "./SpecialMarker.css";
 
-export default function SpecialMarker({ type }) {
+export default function SpecialMarker({ type, isTrue }) {
   let color, text, isOff;
-  switch (type) {
+  if (isTrue)
+  {switch (type) {
     case "newMarker":
       color = "var(--green400)";
       text = "NEW!";
@@ -11,9 +12,8 @@ export default function SpecialMarker({ type }) {
       color = "var(--green900)";
       text = "FEATURED";
       break;
-    default:
-      isOff = "hidden";
-  }
+  }}
+  else isOff = "hidden";
   return (
     <div
       className="special-marker"
