@@ -1,10 +1,13 @@
 import "./SingleFilter.css";
 
-export default function SingleFilter({ textFilter }) {
+export default function SingleFilter({ textFilter, onSingleClearButtonClick }) {
+  function handleClick() {
+    onSingleClearButtonClick(textFilter);
+  }
   return (
     <div className="single-filter-box">
       <span className="single-filter-type">{textFilter}</span>
-      <button className="clear-filter-button">
+      <button className="clear-filter-button" onClick={handleClick}>
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">
           <path
             fill="#FFF"

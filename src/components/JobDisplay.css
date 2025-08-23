@@ -20,12 +20,20 @@
   margin-top: -60px;
 }
 
+.job-main-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
 .job-top-bar {
   height: auto;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
+
+/* vai ter q criar uma div q engloba tudo pra colocar o media e o hover */
 
 .job-name {
   color: var(--green400);
@@ -35,7 +43,7 @@
 
 .job-function {
   color: var(--green900);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 800;
 }
 
@@ -73,11 +81,23 @@ hr {
 @media (min-width: 1200px) {
   .job-display {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 24px;
   }
   .logo-circle {
     margin-top: 0px;
+    align-self: center;
   }
-  .job-top-bar {
-    flex-direction: column;
+  .job-main-box {
+    gap: 1rem;
+    padding-top: 0;
+    margin-right: auto;
+  }
+  hr {
+    display: none;
+  }
+  .filters-job-display {
+    flex-wrap: nowrap;
   }
 }

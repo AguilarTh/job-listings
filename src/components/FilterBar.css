@@ -7,7 +7,7 @@
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
   width: 80%;
   margin-top: -36px;
-  visibility: visible;
+  visibility: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,4 +27,16 @@
   color: var(--gray400);
   font-weight: 700;
   font-size: 1rem;
+}
+
+.clear-container-button:hover {
+  cursor: pointer;
+  color: var(--green400);
+  text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .clear-container-button {
+    font-size: 1.3rem;
+  }
 }

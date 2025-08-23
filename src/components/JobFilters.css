@@ -6,3 +6,9 @@
   font-size: 1.2rem;
   font-weight: 800;
 }
+
+.filters-box:hover {
+  cursor: pointer;
+  background-color: var(--green400);
+  color: rgb(255, 255, 255);
+}
